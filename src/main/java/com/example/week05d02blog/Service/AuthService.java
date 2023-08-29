@@ -42,8 +42,8 @@ public class AuthService {
         user.setEmail(userDTO.getEmail());
 
         // defaults
-//        user.setRole("ADMIN");
-        user.setRole("USER");
+        user.setRole("ADMIN");
+//        user.setRole("USER");
 
 
         authRepository.save(user);

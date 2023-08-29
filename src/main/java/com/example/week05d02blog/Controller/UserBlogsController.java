@@ -60,7 +60,7 @@ public class UserBlogsController {
 
 
     // search for blogs by title [only authenticated users]
-    @GetMapping("/search/title/{title}")
+    @GetMapping("/search/global/title/{title}")
     public ResponseEntity<List<Blog>> findByTitle(@PathVariable String title, @AuthenticationPrincipal User user) {
         return ResponseEntity.ok(blogService.findByTitle(title, user));
     }
